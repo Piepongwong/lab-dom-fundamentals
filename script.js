@@ -48,3 +48,7 @@ var students = [
     lastname: "Bukenya"
     }
 ]
+
+//Iteration 1
+let hello = document.getElementsByTagName('h1')[0];
+hello.innerHTML = "hello class!";
