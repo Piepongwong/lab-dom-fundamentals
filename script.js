@@ -57,3 +57,11 @@ $body = document.getElementsByTagName('body')[0];
 let text = document.createElement('p');
 text.innerHTML='Today we\'re going to solidify our DOM skills!'
 $body.appendChild(text);
+
+//Iteration 3
+for(let i=0; i<students.length; i++){
+let student = document.createElement('h3');
+student.innerHTML = `${students[i].firstname} ${students[i].lastname}`
+$body.appendChild(student);
+};
+
