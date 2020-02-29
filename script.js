@@ -52,3 +52,8 @@ var students = [
 //Iteration 1
 let hello = document.getElementsByTagName('h1')[0];
 hello.innerHTML = "hello class!";
+//Iteration 2
+$body = document.getElementsByTagName('body')[0];
+let text = document.createElement('p');
+text.innerHTML='Today we\'re going to solidify our DOM skills!'
+$body.appendChild(text);
