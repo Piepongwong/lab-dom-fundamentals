@@ -58,10 +58,17 @@ let text = document.createElement('p');
 text.innerHTML='Today we\'re going to solidify our DOM skills!'
 $body.appendChild(text);
 
-//Iteration 3
+//Iteration 3 and 4
 for(let i=0; i<students.length; i++){
-let student = document.createElement('h3');
-student.innerHTML = `${students[i].firstname} ${students[i].lastname}`
-$body.appendChild(student);
+    //Name Surname
+    let student = document.createElement('h3');
+    student.innerHTML = `${students[i].firstname} ${students[i].lastname}` 
+    $body.appendChild(student);
+    let photo = document.createElement('img');
+    $body.appendChild(photo);
+    let lowercaseName = students[i].firstname.toLowerCase();
+    document.getElementsByTagName('img')[i].setAttribute('src', `https://wd-ft-feb.s3.eu-central-1.amazonaws.com/${lowercaseName}.png`)
+    
 };
+
 
