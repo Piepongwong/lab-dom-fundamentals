@@ -74,19 +74,19 @@ for(let i=0; i<students.length; i++){
     photo.style.border="5px solid black";
 };
 
-//Iteration 6
-document.getElementsByTagName('button')[0].onclick = function favoriteStudent() {
-    $body = document.getElementsByTagName('body')[0];
+//Iteration 6 (Button, random student)
+$body = document.getElementsByTagName('body')[0];
+let student = document.createElement('h2');
+let createPhoto = document.createElement('img');
+document.getElementsByTagName('button')[0].onclick = function favoriteStudent() {   
     let randomStudent = students[Math.floor(Math.random() * students.length)];
-    let student = document.createElement('h2');
     student.innerHTML = `${randomStudent.firstname} ${randomStudent.lastname}`;
-    let createPhoto = document.createElement('img');
     $body.prepend(createPhoto);
     $body.prepend(student);
     let photo = document.querySelector('img');
     photo.setAttribute('src', `https://wd-ft-feb.s3.eu-central-1.amazonaws.com/${randomStudent.firstname.toLowerCase()}.png`);
     photo.width="200";
-    photo.style.border="5px solid black";
+    photo.style.border="10px dotted pink";
 }
 
 
