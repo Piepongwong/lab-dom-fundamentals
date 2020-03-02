@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(121, 110, 110);
+    align-content: center;
+}
+
+h1 {
+    color: rgb(64, 79, 105);
+}
+
+button {
+    background-color: rgb(228, 217, 202);
+    border-radius: 50%;
+    border: 2px;
+    border-color: coral;
+    width: 100px;
+    height: 100px;
+    color: rgb(68, 99, 99);
+    animation: drive 0.5s 1s infinite;
+}
+
+button:hover {
+    background-color: rgb(252, 25, 0);
+    color: rgb(24, 16, 17);
+}
+
+@keyframes drive {
+    from {
+        transform: translateX(-100px)
+    }
+    to {
+        transform: translateX(1500px);
+    }
+}
+
+img {
+    width: 200px;
+    border: 5px solid black;
+}
