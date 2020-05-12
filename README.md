@@ -16,7 +16,7 @@ Loop over all the students in the `./script.js` files and create  a `<h3>` eleme
 
 ## Iteration 4
 
-There's an image set up for every student. They are hosted on `https://wd-ft-feb.s3.eu-central-1.amazonaws.com/`. You can find the image of the student by lowercasing the firstname and adding it to the url. Elena's picture is for example hosted on `https://wd-ft-feb.s3.eu-central-1.amazonaws.com/alena.png`. You have to create an image and set the attribute. Use the documentation on mozilla or w3schools if you forgot how to change te attribute of an html tag.
+There's an image set up for every student. They are hosted on `https://wd-ft-may.s3.amazonaws.com/`. You can find the image of the student by adding the firstname to the url. Aïda's picture is for example hosted on `https://wd-ft-may.s3.amazonaws.com/Aïda.png`. You have to create an image and set the attribute. Use the documentation on mozilla or w3schools if you forgot how to change te attribute of an html tag.
 
 ## Iteration 5
 
